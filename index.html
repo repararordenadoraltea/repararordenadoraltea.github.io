@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reparar Ordenador Altea | Servicio Técnico Informático Profesional</title>
-    <meta name="description" content="¿Buscas reparar tu ordenador en Altea? Especialista en reparación de portátiles, instalación de Windows 11, formateo y recuperación de PCs nuevos y antiguos.">
-    <meta name="keywords" content="reparar ordenador altea, servicio tecnico informatico altea, reparar portatil altea, formatear pc altea, instalar windows 11 altea">
+    <meta name="description" content="Servicio técnico experto en reparar ordenador en Altea. Reparación de portátiles, instalación de Windows 11, formateo, eliminación de virus y recuperación de PCs. ¡Soporte rápido y garantizado!">
+    <meta name="keywords" content="reparar ordenador altea, servicio tecnico informatico altea, reparar portatil altea, formatear pc altea, instalar windows 11 altea, informatico altea, recuperar datos altea, reparar macbook altea">
     <link rel="canonical" href="https://repararordenadoraltea.github.io/">
 
+    <!-- Marcado de Datos Estructurados (Schema.org) para LocalBusiness y FAQs -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -20,6 +21,7 @@
         "@type": "PostalAddress",
         "addressLocality": "Altea",
         "addressRegion": "Alicante",
+        "postalCode": "03590",
         "addressCountry": "ES"
       },
       "geo": {
@@ -27,20 +29,61 @@
         "latitude": "38.5989",
         "longitude": "-0.0514"
       },
-      "description": "Servicio técnico informático profesional en Altea. Reparación de ordenadores portátiles, torres, formateo, instalación de Windows 11 y recuperación de sistemas.",
-      "priceRange": "$$"
+      "description": "Servicio técnico informático integral en Altea. Especialistas en reparación de ordenadores portátiles y de sobremesa, instalaciones de software y optimización de hardware.",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta reparar un ordenador en Altea?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El precio depende de la avería. Los servicios de software como formateo o instalación de Windows 11 tienen tarifas planas muy competitivas. Las reparaciones de hardware dependen del coste del componente de sustitución. Siempre proporciono un presupuesto previo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tiempo se tarda en reparar un portátil?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La mayoría de los problemas de software, optimización e instalación de sistemas operativos se resuelven en un plazo de 24 a 48 horas. Si se requiere un componente de hardware específico, el tiempo dependerá de la entrega de la pieza."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Se pierden mis datos al formatear o instalar Windows 11?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Realizo una copia de seguridad integral de tus documentos, fotos y archivos importantes antes de cualquier proceso de formateo o reinstalación del sistema para garantizar que no pierdas nada."
+          }
+        }
+      ]
     }
     </script>
 
     <style>
         :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --card-border: #1f2937;
+            --text-main: #f9fafb;
+            --text-muted: #9ca3af;
             --accent-blue: #38bdf8;
-            --whatsapp-green: #25d366;
-            --youtube-red: #ff0000;
+            --accent-hover: #0ea5e9;
+            --whatsapp-green: #22c55e;
+            --youtube-red: #ef4444;
         }
 
         * {
@@ -48,196 +91,447 @@
             padding: 0;
             box-sizing: border-box;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            scroll-behavior: smooth;
         }
 
         body {
             background-color: var(--bg-color);
             color: var(--text-main);
-            line-height: 1.6;
-            padding: 0;
+            line-height: 1.7;
+            font-size: 1rem;
         }
 
-        header {
-            max-width: 1000px;
+        /* Utilidades */
+        .container {
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 2rem 1rem;
-            text-align: center;
+            padding: 0 1.5rem;
         }
+        .text-center { text-align: center; }
+        .section-padding { padding: 5rem 0; }
+        .highlight { color: var(--accent-blue); }
 
+        /* Navbar */
+        nav {
+            background-color: rgba(17, 24, 39, 0.8);
+            backdrop-filter: blur(8px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--card-border);
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--accent-blue);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 1rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
+            font-size: 1.3rem;
             font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-            background: linear-gradient(to right, #fff, var(--accent-blue));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: var(--text-main);
+            text-decoration: none;
         }
+        .logo span { color: var(--accent-blue); }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--accent-blue); }
 
+        /* Hero Section */
+        header {
+            padding: 6rem 0 4rem 0;
+            background: radial-gradient(circle at top, rgba(56, 189, 248, 0.15), transparent 60%);
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
         .subtitle {
             color: var(--text-muted);
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 2rem auto;
+            font-size: 1.25rem;
+            max-width: 750px;
+            margin: 0 auto 2.5rem auto;
         }
-
         .cta-container {
             display: flex;
             gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
-            margin-bottom: 3rem;
         }
-
         .btn {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            padding: 0.8rem 1.8rem;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
             border-radius: 8px;
             font-weight: 600;
             text-decoration: none;
-            transition: transform 0.2s, opacity 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-
         .btn:hover {
             transform: translateY(-2px);
-            opacity: 0.9;
         }
-
         .btn-whatsapp {
             background-color: var(--whatsapp-green);
             color: #fff;
+            box-shadow: 0 4px 14px rgba(34, 197, 94, 0.3);
         }
-
         .btn-youtube {
             background-color: var(--youtube-red);
             color: #fff;
+            box-shadow: 0 4px 14px rgba(239, 68, 68, 0.3);
         }
 
-        main {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 1rem 4rem 1rem;
+        /* Contenido y Grid */
+        h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
         }
-
-        .services-grid {
+        .section-desc {
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 3rem auto;
+            font-size: 1.1rem;
+        }
+        .grid-3 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
         }
-
-        .service-card {
+        .card {
             background-color: var(--card-bg);
-            padding: 2rem;
+            border: 1px solid var(--card-border);
+            padding: 2.5rem;
             border-radius: 12px;
-            border: 1px solid #334155;
+            transition: border-color 0.3s;
         }
-
-        .service-card h3 {
+        .card:hover {
+            border-color: var(--accent-blue);
+        }
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .card ul li {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .card ul li::before {
+            content: "✓";
             color: var(--accent-blue);
-            margin-bottom: 0.8rem;
-            font-size: 1.3rem;
+            font-weight: bold;
         }
 
-        .service-card p {
+        /* Bloques de Texto de Larga Extensión */
+        .rich-text {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .rich-text p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        .rich-text h3 {
+            font-size: 1.6rem;
+            margin: 2.5rem 0 1rem 0;
+            color: var(--accent-blue);
+        }
+
+        /* Tabla de Precios */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 2rem 0;
+            border-radius: 8px;
+            border: 1px solid var(--card-border);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--card-bg);
+            text-align: left;
+        }
+        th, td {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--card-border);
+        }
+        th {
+            background-color: rgba(31, 41, 55, 0.5);
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+        td { color: var(--text-muted); }
+        tr:last-child td { border-bottom: none; }
+
+        /* FAQs */
+        .faq-item {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .faq-item h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+        .faq-item p {
             color: var(--text-muted);
             font-size: 0.95rem;
         }
 
-        .about-section {
-            margin-top: 4rem;
-            background-color: #1e293b4d;
-            padding: 2.5rem;
-            border-radius: 12px;
-            border-left: 4px solid var(--accent-blue);
-        }
-
-        .about-section h2 {
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
-        }
-
-        .about-section p {
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-        }
-
+        /* Footer */
         footer {
-            text-align: center;
-            padding: 2rem 1rem;
+            background-color: #070a10;
+            border-top: 1px solid var(--card-border);
+            padding: 3rem 0;
             color: var(--text-muted);
             font-size: 0.9rem;
-            border-top: 1px solid #1e293b;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .footer-col h4 {
+            color: var(--text-main);
+            margin-bottom: 1rem;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col ul li {
+            margin-bottom: 0.5rem;
         }
 
-        @media (max-width: 600px) {
-            h1 { font-size: 2rem; }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.25rem; }
+            h2 { font-size: 1.75rem; }
+            .nav-links { display: none; }
             .btn { width: 100%; justify-content: center; }
         }
     </style>
 </head>
 <body>
 
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">Informática<span>Altea</span></a>
+            <ul class="nav-links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#detalles">Guía Técnica</a></li>
+                <li><a href="#precios">Tarifas</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <header>
-        <div class="logo">Informática Altea</div>
-        <h1>Reparar Ordenador en Altea</h1>
-        <p class="subtitle">Soluciones informáticas profesionales y rápidas. Recuperación, mantenimiento y optimización de tus equipos informáticos.</p>
-        
-        <div class="cta-container">
-            <a href="https://wa.me/34641128009?text=Hola,%20necesito%20reparar%20un%20ordenador" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
-                💬 Contactar por WhatsApp
-            </a>
-            <a href="https://youtube.com/@repararordenador" class="btn btn-youtube" target="_blank" rel="noopener noreferrer">
-                ▶️ Visitar Canal de YouTube
-            </a>
+        <div class="container text-center">
+            <h1>Reparar Ordenador en Altea</h1>
+            <p class="subtitle">Soporte técnico informático especializado de alta confianza. Resolvemos averías en ordenadores portátiles, sobremesa, sistemas operativos y hardware con la máxima rapidez.</p>
+            <div class="cta-container">
+                <a href="https://wa.me/34641128009?text=Hola,%20necesito%20reparar%20un%20ordenador%20en%20Altea" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                    💬 Contactar por WhatsApp: 641 128 009
+                </a>
+                <a href="https://youtube.com/@repararordenador" class="btn btn-youtube" target="_blank" rel="noopener noreferrer">
+                    ▶️ Formación y Consejos en YouTube
+                </a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section id="servicios">
-            <h2 style="text-align: center; margin-bottom: 2rem; font-size: 2rem;">Servicios Informáticos en Altea</h2>
+        <!-- Sección de Servicios Detallados -->
+        <section id="servicios" class="container section-padding">
+            <h2 class="text-center">Especialidades en Reparación de Ordenadores</h2>
+            <p class="section-desc text-center">Sea cual sea el problema de tu equipo informático, dispongo del conocimiento técnico y las herramientas avanzadas para diagnosticarlo y solucionarlo con total garantía.</p>
             
-            <div class="services-grid">
-                <div class="service-card">
+            <div class="grid-3">
+                <div class="card">
                     <h3>Reparación de Portátiles</h3>
-                    <p>Solución a problemas de calentamiento, fallos de pantalla, cambio de teclado, batería y sustitución de componentes internos para todas las marcas.</p>
+                    <p>Los ordenadores portátiles sufren un desgaste severo debido a su movilidad. Soluciono averías complejas para que no tengas que comprar un equipo nuevo.</p>
+                    <ul>
+                        <li>Cambio de pantallas rotas o con fallos de retroiluminación.</li>
+                        <li>Sustitución de baterías internas y conectores de carga (Jack DC).</li>
+                        <li>Limpieza interna profunda y cambio de pasta térmica para evitar sobrecalentamientos.</li>
+                        <li>Reparación o cambio de teclados defectuosos y touchpads.</li>
+                    </ul>
                 </div>
-                <div class="service-card">
+                <div class="card">
                     <h3>Instalación de Windows 11</h3>
-                    <p>Actualización e instalación limpia del sistema operativo Windows 11. Optimización inicial y configuración de seguridad para un rendimiento máximo.</p>
+                    <p>Preparo tu ordenador para el futuro técnico. Si tu equipo se ha quedado obsoleto o muestra errores continuos, una instalación limpia es la solución definitiva.</p>
+                    <ul>
+                        <li>Instalación oficial y optimizada de Windows 11 en equipos compatibles e incompatibles de forma segura.</li>
+                        <li>Configuración avanzada de privacidad y eliminación de software innecesario (bloatware).</li>
+                        <li>Instalación de drivers oficiales actualizados para un rendimiento fluido.</li>
+                        <li>Activación de licencias originales y copias de seguridad previas.</li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <h3>Formateo y Limpieza</h3>
-                    <p>Eliminación completa de virus, malware y archivos basura. Devolvemos la velocidad original a tu ordenador mediante un formateo profesional y seguro.</p>
-                </div>
-                <div class="service-card">
-                    <h3>PCs Nuevos y Antiguos</h3>
-                    <p>Configuración y montaje de ordenadores nuevos a medida, así como la restauración y actualización de hardware para ordenadores antiguos (SSDs, memoria RAM).</p>
+                <div class="card">
+                    <h3>Formateo e Inyección de Velocidad</h3>
+                    <p>¿Tu ordenador tarda una eternidad en encender o abrir un navegador? Con el tiempo, los sistemas se saturan. Un formateo estructural le devolverá su velocidad original.</p>
+                    <ul>
+                        <li>Eliminación de virus, troyanos, spyware y malware persistente.</li>
+                        <li>Limpieza de registros del sistema y optimización del arranque del equipo.</li>
+                        <li>Resguardo garantizado de fotos, documentos y bases de datos antes del formateo.</li>
+                        <li>Migración de sistemas operativos desde discos duros lentos (HDD) a discos sólidos de alta velocidad (SSD).</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section class="about-section">
-            <h2>Soporte Técnico de Confianza con Enfoque Geo-Localizado</h2>
-            <p>Si te encuentras en <strong>Altea</strong> o alrededores y tu equipo no arranca, va lento o necesita una actualización de software, ofrezco un servicio técnico transparente, rápido y sin sorpresas.</p>
-            <p>Especializado en todo lo relacionado con la informática: desde la recuperación de datos perdidos hasta el mantenimiento preventivo para evitar futuras averías en tus dispositivos portátiles y de sobremesa.</p>
+        <!-- Bloque de Contenido de Autoridad y Profundidad SEO (Miles de Palabras) -->
+        <section id="detalles" class="container section-padding" style="border-top: 1px solid var(--card-border);">
+            <div class="rich-text">
+                <h2>¿Por qué elegir un servicio local para reparar tu ordenador en Altea?</h2>
+                <p>Cuando un ordenador falla, el ecosistema digital de un profesional, un estudiante o una empresa se detiene por completo. Encontrar un técnico de confianza en la Costa Blanca que entienda a la perfección la urgencia y que ofrezca un servicio técnico transparente es vital. Al buscar <strong>reparar ordenador altea</strong>, garantizo una atención individualizada, eliminando los costes desorbitados de las grandes superficies y los intermediarios innecesarios.</p>
+                
+                <h3>Recuperación integral de PCs nuevos y antiguos</h3>
+                <p>No des por perdido tu ordenador viejo. Existe la falsa creencia en el sector informático de que un ordenador con más de cinco años debe ser sustituido. En la gran mayoría de ocasiones, la lentitud extrema se debe a la degradación mecánica del disco duro o a la falta de memoria RAM. Realizo restauraciones profundas en arquitecturas antiguas, adaptándolas para que puedan ejecutar tareas de navegación, ofimática y multimedia con total soltura.</p>
+                <p>Por otro lado, los ordenadores nuevos de última generación (orientados al gaming, edición de vídeo o arquitectura avanzada) requieren configuraciones minuciosas. Ajusto BIOS/UEFI, perfiles de memoria XMP, configuraciones de refrigeración líquida y optimización de tarjetas gráficas dedicadas para exprimir cada vatio de potencia de manera estable y segura.</p>
+
+                <h3>Arquitectura informática: Todo lo relacionado con la informática</h3>
+                <p>Mi rango de actuación va mucho más allá del simple reemplazo de piezas. Ofrezco un soporte completo que engloba:</p>
+                <ul>
+                    <li>Configuración de redes locales de alta velocidad (Cableado estructurado y optimización de redes Wi-Fi Mesh en viviendas amplias en Altea).</li>
+                    <li>Asesoramiento y montaje de ordenadores por componentes adaptados rigurosamente a tu presupuesto y necesidades reales.</li>
+                    <li>Sistemas de almacenamiento en red (NAS) para asegurar copias de seguridad automáticas e infalibles contra virus de tipo Ramsonware.</li>
+                    <li>Solución a pantallas azules de la muerte (BSOD), bloqueos aleatorios del sistema y comportamientos erráticos del hardware.</li>
+                </ul>
+
+                <h3>El peligro del sobrecalentamiento en Altea y la Costa Blanca</h3>
+                <p>Debido al clima mediterráneo y la humedad de Altea, el polvo ambiental se compacta fácilmente dentro de las ranuras de ventilación de torres y portátiles, creando una capa sólida que impide la disipación del calor. Si notas que los ventiladores hacen demasiado ruido o el portátil quema por la parte inferior, la pasta térmica conductora probablemente se haya solidificado. Realizar un mantenimiento preventivo a tiempo ahorra cientos de euros en reparaciones de placas base o procesadores quemados.</p>
+            </div>
+        </section>
+
+        <!-- Tabla de Orientación de Tarifas (Transparencia Total) -->
+        <section id="precios" class="container section-padding" style="border-top: 1px solid var(--card-border);">
+            <h2 class="text-center">Tarifas Transparentes de Servicio Técnico</h2>
+            <p class="section-desc text-center">Sin costes ocultos. Presupuestos cerrados antes de proceder a cualquier intervención informática para tu total tranquilidad.</p>
+            
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Servicio Informático</th>
+                            <th>Descripción Básica</th>
+                            <th>Precio Estimado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Diagnóstico Completo de Hardware</td>
+                            <td>Pruebas de estrés de componentes, testeo de memoria y disco</td>
+                            <td>Económico / Incluido en reparación</td>
+                        </tr>
+                        <tr>
+                            <td>Instalación Limpia de Windows 11</td>
+                            <td>Sistema operativo, configuración de drivers y optimización</td>
+                            <td>Consultar tarifa plana</td>
+                        </tr>
+                        <tr>
+                            <td>Formateo Completo + Backup previo</td>
+                            <td>Resguardo de datos, borrado seguro e instalación de software</td>
+                            <td>Consultar tarifa plana</td>
+                        </tr>
+                        <tr>
+                            <td>Limpieza Física e Interna</td>
+                            <td>Desmontaje completo, soplado de conductos y cambio de pasta térmica</td>
+                            <td>Según modelo (Torre / Portátil)</td>
+                        </tr>
+                        <tr>
+                            <td>Sustitución de Componentes (SSD/RAM)</td>
+                            <td>Instalación física de la pieza y clonación o adaptación del sistema</td>
+                            <td>Precio de la pieza + Mano de obra mínima</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Sección FAQ con marcado Schema para dominar en las IA y Google -->
+        <section id="faq" class="container section-padding" style="border-top: 1px solid var(--card-border);">
+            <h2 class="text-center">Preguntas Frecuentes sobre Reparación de Ordenadores</h2>
+            <p class="section-desc text-center">Respuestas claras a las dudas más habituales de los clientes que buscan asistencia en Altea.</p>
+            
+            <div style="max-width: 850px; margin: 0 auto;">
+                <div class="faq-item">
+                    <h3>¿Cuánto cuesta reparar un ordenador en Altea?</h3>
+                    <p>El coste final depende del tipo de avería. Los problemas relacionados exclusivamente con el software (como limpiezas de virus, optimizaciones o configuraciones) tienen tarifas fijas y muy accesibles. En averías de hardware, el coste se compone de la mano de obra y el precio de la pieza de recambio. Siempre recibirás una valoración previa antes de proceder.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Cuánto tiempo se tarda en reparar un portátil?</h3>
+                    <p>Para la mayoría de los servicios de mantenimiento, formateo e instalación de Windows 11, el tiempo de entrega suele oscilar entre 24 y 48 horas laborables. Si el ordenador portátil requiere el cambio de una pantalla específica, teclado o un componente de placa base que deba ser solicitado a fábrica, el plazo se ajustará según el tiempo de transporte de la pieza.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Se perderán mis datos al formatear o instalar Windows 11?</h3>
+                    <p>Absolutamente no, siempre y cuando el disco duro original no esté físicamente destruido. El primer paso de mi protocolo técnico es realizar un clonado o un backup completo de tus directorios personales (Documentos, Escritorio, Fotografías, Correos). Tras reinstalar el sistema operativo limpio, devuelvo tus archivos exactamente a su lugar.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Reparas ordenadores de marcas específicas o clónicos?</h3>
+                    <p>Trabajo con todas las marcas del mercado: Asus, HP, Lenovo, Acer, Dell, MSI, Apple (MacBook e iMac), así como ordenadores de sobremesa montados a medida (clónicos). Al dominar la informática a nivel de arquitectura y componentes, cualquier marca puede ser diagnosticada y reparada con éxito.</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Reparar Ordenador Altea. Todos los derechos reservados.</p>
-        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: #475569;">Especialistas en soporte técnico informático local.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Reparar Ordenador Altea</h4>
+                    <p>Soporte informático profesional para particulares, autónomos y empresas. Confianza, transparencia y velocidad.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Área de Cobertura Geográfica</h4>
+                    <ul>
+                        <li>Altea Pueblo y Casco Antiguo</li>
+                        <li>Altea la Vella</li>
+                        <li>Altea Hills</li>
+                        <li>Zonas colindantes (Albir, Alfaz del Pi, Calpe)</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto Directo</h4>
+                    <p>Teléfono / WhatsApp: <strong>641 128 009</strong></p>
+                    <p>YouTube: <strong>@repararordenador</strong></p>
+                </div>
+            </div>
+            <div style="text-align: center; border-top: 1px solid var(--card-border); padding-top: 2rem; font-size: 0.8rem; color: #4b5563;">
+                <p>&copy; 2026 Reparar Ordenador Altea. Sitio estático optimizado para SEO e Inteligencias Artificiales (GEO-Search ready).</p>
+            </div>
+        </div>
     </footer>
 
 </body>
