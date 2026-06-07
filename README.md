@@ -1,2 +1,1 @@
-# repararordenadoraltea.github.io
-Reparación de Ordenadores en Altea
+ya tengo el sitio web
